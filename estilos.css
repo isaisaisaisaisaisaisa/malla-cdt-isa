@@ -1,1 +1,96 @@
+/* Estilo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0faff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background: #cde3f9;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 3px solid #a2bde2;
+}
+
+/* Mensajes motivacionales */
+.motivacional {
+  color: #4c5a80;
+  font-style: italic;
+  margin: 0.5rem;
+}
+
+/* Contenedor de la malla */
+#malla-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* Columna de semestre */
+.semestre {
+  background-color: #e7f0fa;
+  border: 2px solid #a2bde2;
+  border-radius: 15px;
+  min-width: 200px;
+  padding: 1rem;
+  flex-shrink: 0;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.05);
+}
+
+.semestre h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #2d4566;
+}
+
+/* Asignaturas */
+.asignatura {
+  background-color: #d9e8f6;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  border: 1px solid #b3cde8;
+}
+
+.asignatura:hover {
+  background-color: #bfe0f4;
+}
+
+/* Asignatura aprobada */
+.asignatura.aprobada {
+  background-color: #bbf4d8;
+  text-decoration: line-through;
+  color: #2c774d;
+}
+
+/* Asignatura bloqueada */
+.asignatura.bloqueada {
+  background-color: #f9d3d3;
+  cursor: not-allowed;
+  color: #9b4d4d;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #cde3f9;
+  border-top: 3px solid #a2bde2;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #malla-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
